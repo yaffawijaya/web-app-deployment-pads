@@ -47,10 +47,10 @@ with model_training:
 
     max_depth = sel_col.slider('What should be the max_depth of the model?', min_value=2, max_value=10, value=3 ,step=1)
 
-    n_estimators = sel_col.selectbox('How many trees should there be?', options=[3,4,5,6,7,8], index=0)
+    n_estimators = sel_col.selectbox('How many trees should there be?', options=[5,6,7,8,9,10], index=0)
 
   
-    input_feature = sel_col.selectbox('Which feature should be used as the input feature?',options=taxi_data.columns)
+    input_feature = sel_col.selectbox('Which feature should be used as the input feature?',options=taxi_data.columns, index=7)
 
     regr = RandomForestRegressor(max_depth=max_depth, n_estimators=n_estimators)
 
