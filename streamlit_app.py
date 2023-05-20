@@ -20,9 +20,9 @@ with dataset:
     st.header('NYC Taxi Dataset')
     st.text('We are currently using the NYC Yellow Taxi 2019 Deceber Dataset from this link down below:')
 
-    url = 'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-12.parquet'
+    url = 'https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page?ref=hackernoon.com'
 
-    if st.button('Download Dataset'):
+    if st.button('Download Link'):
       webbrowser.open_new_tab(url)
     
     # taxi_data = get_data('taxi-data.parquet')
